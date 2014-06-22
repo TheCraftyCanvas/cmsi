@@ -1,38 +1,17 @@
-sites/*/settings.php
-sites/*/files/
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+.htaccess*
 
-includes/
-misc/
-modules/
-profiles/
-scripts/
-themes/
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
 
+# Ignore dev specific paths
+_local
+_sql
 
-_local/*
-_sql/*
-
-sitemap.xml
-sitemap.xml.gz
 *.tar.gz
+*.gz
 *.zip
-
-
-authorize.php
-CHANGELOG.txt
-COPYRIGHT.txt
-cron.php
-index.php
-INSTALL.*.txt
-install.php
-LICENSE.txt
-MAINTAINERS.txt
 php.ini
-phpinfo.php
-README.txt
-robots.txt
-update.php
-UPGRADE.txt
 web.config
-xmlrpc.php
-
